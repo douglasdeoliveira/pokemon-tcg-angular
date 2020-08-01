@@ -5,7 +5,7 @@
   "scripts": {
     "build": "ng build",
     "e2e": "ng e2e",
-    "lint": "eslint \"**/*.ts\" --quiet --fix",
+    "lint": "eslint \"**/*.{js,ts}\" --quiet --fix",
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test"
@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~10.0.6",
     "@angular/platform-browser-dynamic": "~10.0.6",
     "@angular/router": "~10.0.6",
+    "flexboxgrid": "^6.3.1",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -66,8 +67,8 @@
       "prettier-package-json --write",
       "git add"
     ],
-    "*.ts": [
-      "lint",
+    "*.{js,ts}": [
+      "eslint --fix",
       "git add"
     ],
     "*.scss": [

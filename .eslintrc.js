@@ -18,11 +18,17 @@ module.exports = {
   plugins: ['@typescript-eslint', 'prettier', 'import-helpers'],
   rules: {
     'prettier/prettier': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'import-helpers/order-imports': [
       'warn',
       {
         newlinesBetween: 'always',
-        groups: ['module', ['parent', 'sibling', 'index']],
+        groups: [
+          'module',
+          ['/^@app/', '/^@env/'],
+          ['parent', 'sibling', 'index'],
+        ],
         alphabetize: { order: 'asc', ignoreCase: true },
       },
     ],
