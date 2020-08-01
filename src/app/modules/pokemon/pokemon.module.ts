@@ -3,13 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@app/shared/shared.module';
 
+import { PokemonCardComponent } from './components';
+import { CardsResolverGuard } from './guards';
 import { PokemonIdComponent, PokemonListComponent } from './pages';
 import { PokemonRoutingModule } from './pokemon-routing.module';
 import { PokemonService } from './services';
 
 @NgModule({
-  declarations: [PokemonIdComponent, PokemonListComponent],
+  declarations: [
+    PokemonIdComponent,
+    PokemonListComponent,
+    PokemonCardComponent,
+  ],
   imports: [CommonModule, SharedModule, PokemonRoutingModule],
-  providers: [PokemonService],
+  providers: [CardsResolverGuard, PokemonService],
 })
 export class PokemonModule {}

@@ -1,1 +1,2 @@
-export { default as PokemonCard } from './pokemon-card.interface';
+export * from './cards.interface';
+export * from './pokemon-card.interface';
