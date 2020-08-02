@@ -1,27 +1,77 @@
-# PokemonTcgAngular
+<h1 align="center">
+    <img alt="finch" src=".github/pokemon-tcg-logo.png" width="200" />
+    <br>
+    Pokémon TCG Angular
+</h1>
+<h4 align="center">
+  Practical frontend test for <a href="https://www1.brasilprev.com.br/">BrasilPrev</a>
+</h4>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasdeoliveira/pokemon-tcg-angular.svg">
 
-## Development server
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/douglasdeoliveira/pokemon-tcg-angular.svg">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/douglasdeoliveira/pokemon-tcg-angular.svg">
 
-## Code scaffolding
+  <a href="https://github.com/douglasdeoliveira/pokemon-tcg-angular/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/douglasdeoliveira/pokemon-tcg-angular.svg">
+  </a>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+  <a href="https://github.com/douglasdeoliveira/pokemon-tcg-angular/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/douglasdeoliveira/pokemon-tcg-angular.svg">
+  </a>
 
-## Build
+  <img alt="GitHub" src="https://img.shields.io/github/license/douglasdeoliveira/pokemon-tcg-angular.svg">
+</p>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<p align="center">
+  <a href="#rocket-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-use">How To Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#memo-license">License</a>
+</p>
 
-## Running unit tests
+![App Screenshot](.github/screenshot.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<p align="center">
+  <a href="https://keen-lamport-0e3f9f.netlify.app/" target="_blank">
+    <img alt="Demo on Netlify" src=".github/btn-demo.png">
+  </a>
+</p>
 
-## Running end-to-end tests
+## :rocket: Technologies
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+This project was developed with the following technologies:
 
-## Further help
+- [Angular](https://angular.io/)
+- [Flexboxgrid](http://flexboxgrid.com/)
+- [Eslint](https://eslint.org/)
+- [Husky](https://github.com/typicode/husky)
+- [Prettier](https://prettier.io/)
+- [Stylelint](https://stylelint.io/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## :information_source: How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v10.16][nodejs] or higher + [Yarn v1.13][yarn] or higher installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/douglasdeoliveira/pokemon-tcg-angular
+
+# Install dependencies
+$ cd pokemon-tcg-angular && yarn
+
+# Run frontend
+$ yarn start
+```
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/douglasdeoliveira/pokemon-tcg-angular/blob/master/LICENSE) for more information.
+
+---
+
+Made with ♥ by Douglas de Oliveira :wave: [Get in touch!](https://www.linkedin.com/in/douglasoliveiraa/)
+
+[nodejs]: https://nodejs.org/
+[yarn]: https://yarnpkg.com/
