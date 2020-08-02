@@ -38,7 +38,7 @@
 ![App Screenshot](.github/screenshot.png)
 
 <p align="center">
-  <a href="https://keen-lamport-0e3f9f.netlify.app/" target="_blank">
+  <a href="https://thirsty-noyce-34274f.netlify.app/" target="_blank">
     <img alt="Demo on Netlify" src=".github/btn-demo.png">
   </a>
 </p>
