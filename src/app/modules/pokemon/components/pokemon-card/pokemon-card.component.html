@@ -6,7 +6,9 @@
     <div class="card__body">
       <p><strong>ID:</strong> {{ card.id }}</p>
       <p><strong>Name:</strong> {{ card.name }}</p>
-      <p><strong>Types:</strong> {{ card.types?.toString() }}</p>
+      <p *ngIf="card.types">
+        <strong>Types:</strong> {{ card.types.toString() }}
+      </p>
     </div>
   </a>
 </div>

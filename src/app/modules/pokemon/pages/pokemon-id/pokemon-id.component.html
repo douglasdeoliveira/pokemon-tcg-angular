@@ -1,1 +1,116 @@
-<p>pokemon-id works!</p>
+<main class="wrap container-fluid">
+  <section class="row">
+    <div class="col-md-5 col-sm-12 col-xs-12">
+      <div class="card__image">
+        <img [src]="card.imageUrlHiRes" alt="Card {{ card.name }}" />
+      </div>
+    </div>
+    <div class="col-md-7 col-sm-12 col-xs-12">
+      <div class="card__info">
+        <p><strong>ID:</strong> {{ card.id }}</p>
+        <p><strong>Name:</strong> {{ card.name }}</p>
+        <p *ngIf="card.types">
+          <strong>Types:</strong> {{ card.types.toString() }}
+        </p>
+
+        <div *ngIf="card.attacks" class="table">
+          <table role="table">
+            <caption style="background-color: #03a9f4;">
+              Attacks
+            </caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">
+                  Name
+                </th>
+                <th scope="col" role="columnheader">
+                  Description
+                </th>
+                <th scope="col" role="columnheader">
+                  Damage
+                </th>
+                <th scope="col" role="columnheader">
+                  Energy Cost
+                </th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr *ngFor="let attack of card.attacks" role="row">
+                <td role="cell" data-title="Name">
+                  {{ attack.name }}
+                </td>
+                <td role="cell" data-title="Description">
+                  {{ attack.text }}
+                </td>
+                <td role="cell" data-title="Damage">
+                  {{ attack.damage }}
+                </td>
+                <td role="cell" data-title="Energy Cost">
+                  {{ attack.convertedEnergyCost }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div *ngIf="card.resistances" class="table">
+          <table role="table">
+            <caption style="background-color: #4caf50;">
+              Resistances
+            </caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">
+                  Type
+                </th>
+                <th scope="col" role="columnheader">
+                  Value
+                </th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr *ngFor="let resistance of card.resistances" role="row">
+                <td role="cell" data-title="Type">
+                  {{ resistance.type }}
+                </td>
+                <td role="cell" data-title="Value">
+                  {{ resistance.value }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div *ngIf="card.weaknesses" class="table">
+          <table role="table">
+            <caption style="background-color: #f44336;">
+              Weaknesses
+            </caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader">
+                  Type
+                </th>
+                <th scope="col" role="columnheader">
+                  Value
+                </th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr *ngFor="let weakness of card.weaknesses" role="row">
+                <td role="cell" data-title="Type">
+                  {{ weakness.type }}
+                </td>
+                <td role="cell" data-title="Value">
+                  {{ weakness.value }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <button class="btn--back" (click)="back()">Back</button>
+    </div>
+  </section>
+</main>

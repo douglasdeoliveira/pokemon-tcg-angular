@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { CardsResolverGuard } from './guards';
+import { CardsResolverGuard, CardResolverGuard } from './guards';
 import { PokemonListComponent, PokemonIdComponent } from './pages';
 
 const routes: Routes = [
@@ -10,7 +10,11 @@ const routes: Routes = [
     component: PokemonListComponent,
     resolve: { cards: CardsResolverGuard },
   },
-  { path: 'card/:pokemon_id', component: PokemonIdComponent },
+  {
+    path: 'card/:card_id',
+    component: PokemonIdComponent,
+    resolve: { card: CardResolverGuard },
+  },
 ];
 
 @NgModule({
