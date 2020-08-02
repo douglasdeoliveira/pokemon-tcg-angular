@@ -4,13 +4,17 @@
     Pokémon TCG Angular
 </h1>
 <h4 align="center">
-  Practical frontend test for <a href="https://www1.brasilprev.com.br/">BrasilPrev</a>
+  Practical frontend test for <a href="https://www1.brasilprev.com.br/" target="_blank">BrasilPrev</a>
 </h4>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/douglasdeoliveira/pokemon-tcg-angular.svg">
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/douglasdeoliveira/pokemon-tcg-angular.svg">
+
+  <a href="https://app.codacy.com/manual/douglasdeoliveira/pokemon-tcg-angular?utm_source=github.com&utm_medium=referral&utm_content=douglasdeoliveira/pokemon-tcg-angular&utm_campaign=Badge_Grade_Dashboard">
+    <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/2757534fb4d84245843044583fc501c6">
+  </a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/douglasdeoliveira/pokemon-tcg-angular.svg">
 
